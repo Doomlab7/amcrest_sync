@@ -1,5 +1,6 @@
 import datetime
 import logging
+import time
 
 import requests
 from requests.auth import HTTPDigestAuth
@@ -41,4 +42,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
+        time.sleep(300)
