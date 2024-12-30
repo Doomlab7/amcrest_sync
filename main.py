@@ -60,9 +60,5 @@ def main():
         set_time(endpoint, auth)
         get_time(endpoint, auth)
 
-
 if __name__ == "__main__":
     main()
-    # while True:
-    #     main()
-    #     time.sleep(300)

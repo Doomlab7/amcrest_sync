@@ -1,0 +1,11 @@
+services:
+  amcrest_sync:
+    container_name: amcrest_sync
+    build: .
+    restart: unless-stopped
+    volumes:
+      - /var/home/nic/projects/personal/amcrest_sync/config.yml:/app/config.yml
+    entrypoint: ["python3", "/app/watcher.py"]
+    environment:
+      - TZ=America/Chicago
+    
